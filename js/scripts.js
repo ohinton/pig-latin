@@ -1,8 +1,3 @@
-
-var userInput = function(input) {
-  console.log(input);
-  var yWord = [];
-
   //for loop: 3 parameters
   //1st is the counter
   //2nd when does it stop?
@@ -12,33 +7,45 @@ var userInput = function(input) {
     //if the word starts with y, then
     //move that y to end of word
     //and add an ay.
-  debugger;
-    var charArray = input.split("");
-    var newcharArray = [];
+
+var consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "k", "m", "n", "p", "q", "r", "s", "t", "v", "x","w","z"];
+
+var vowels = ["a", "e", "i", "o", "u"];
+
+var userInput = function(input) {
+  var charArray = input.split("");
+  var newcharArray = [];
+
+  //Vowel-words start here
+  for (i=0; i < vowels.length; i++){
+    if (vowels.includes(input.charAt(0))) {
+      newcharArray = charArray.push("ay");
+      //loop through array of vowels here
+      return newcharArray;
+    }
+  }
+  //Vowel-words end here
+
+  //Y-words start here
     if (input.charAt(0) === "y"){
-      //then do something.
       newcharArray = charArray.splice(0, 1);
       charArray.push("y");
       charArray.push("ay");
       return charArray;
     }
-    else {
-      console.log("test");
-    }
+//Y-words start end
 
 
 
-    // yWord.push(i);
-    // yWord.splice(0, 1, 'yay');
-    // return yWord;
-  }
+  // yWord.push(i);
+  // yWord.splice(0, 1, 'yay');
+  // return yWord;
+}
 
 $(document).ready(function() {
   $("#pig-latin").submit(function(event) {
     event.preventDefault();
     var inputString = $("#word").val();
-    // console.log(inputString);
-
     var result = userInput(inputString);
     var finalResult = result.join("");
 
@@ -48,9 +55,7 @@ $(document).ready(function() {
 });
 
 
-// var consonants = ["B", "C", "D", "F", "G," "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "X", "W", "Z"]
-//
-// var vowels = ["A", "E", "I", "O", "U", "Y"]
+
 
 //will we need to convert uses input to uppercase so the code can compare?//
 
