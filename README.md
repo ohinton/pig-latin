@@ -1,4 +1,4 @@
-# _Pig Latin Translatorator_
+# _Pig Latin Translator_
 
 #### _Turn your English into Pig Latin_
 
@@ -24,17 +24,13 @@ _This website will translate your English into Pig Latin._
 * _Open web browser of choice_
 
 ## Known Bugs
-* Protozoa
-* Porifera
-* Nemathelminthes
-* Mollusca
-* Arthropoda
-
+* _Freezes when words without vowels are used. Example: my_
+* _Allows user to input numbers, and then freezes_
 
 ## Support and contact details
 
-_Olivia Hinton: hinton.olivia@gmail.com_
-_Sam Park: sampark18@gmail.com._
+* _Olivia Hinton: hinton.olivia@gmail.com_
+* _Sam Park: sampark18@gmail.com_
 
 ## Technologies Used
 
@@ -48,4 +44,4 @@ _Sam Park: sampark18@gmail.com._
 
 *This software is licensed under the MIT license.*
 
-Copyright (c) 2016 **_Mind Your Own Beeswax Inc._**
+Copyright (c) 2016 **_Olivia Hinton and Sam Park_**
